@@ -1,6 +1,10 @@
 
 # Sequence Alignment Algorithm Demo
 
+Demos:
+* [Simple](https://www.youtube.com/watch?v=lo5RtxLsj7I)
+* [Lazy](https://www.youtube.com/watch?v=NKzLNRrruug)
+* [Hirschberg's](https://www.youtube.com/watch?v=cPQeJt-2Y1Q)
 
 This code gives a demonstration of several different alignment algorithms.
 Some algorithms determine an optimal alignment, some only

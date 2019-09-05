@@ -38,6 +38,7 @@ Each cell of the matrix, `D[i][j]`, contains the edit cost for the sequences
 This is a modified version of the standard DPA which computes a smaller region
 of the D matrix (runs in `O(nd)` time), where `d` is the edit distance.
 
+[ref](http://users.monash.edu/~lloyd/tildeStrings/Alignment/92.IPL.html)
 
 ### Ukkonen's Algorithm
 Ukkonen's algorithm runs in `O(d*d + n)` time.  This algorithm does not use the
@@ -46,17 +47,20 @@ here operating of the standard matrix to give an idea as to which cells of the
 DPA matrix it computes.  Blue cells indicate a cell currently being computed.
 Green cells indicate cells that have already been computed.
 
+[ref](https://www.sciencedirect.com/science/article/pii/S0019995885800462)
+
 ### Hirschberg
 Hirschberg presented a modification of the DPA that allows an optimal
 alignment to be found in `O(n)` space.  Green cells are cells that have been
 computed and are currently stored.  Yellow cells indicate cells that are known
 to lie on the optimal alignment.
 
+[wikipedia desc](https://en.wikipedia.org/wiki/Hirschberg%27s_algorithm)
+
 ### Linear DPA
 This algorithm is the `O(n*n)` DPA for linear gap
 costs, with gaps costed as a+b*k where a=3, b=1, matches=0,
 mismatches=0.
-
 
 [comment]: # (Lazy Linear DPA)
 [comment]: # (An attempt at a lazy evaluation for linear gap costs.  It is wrong, incorrect and don't work!)
